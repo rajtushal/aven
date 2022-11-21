@@ -1,11 +1,12 @@
 import Header from "./Header";
-import Login from "./login";
+import "./general.css";
+import MainContent from "./MainContent";
 
 function App() {
   return (
     <>
       <Header />
-      <Login />
+      <MainContent />
     </>
   );
 }
