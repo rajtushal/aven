@@ -1,0 +1,64 @@
+.side-info-accordion {
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.side-info-accordion > h2 {
+  background: #dce9f4;
+  font-size: 20px;
+  color: #4f4f4f;
+  font-weight: 600;
+  padding: 1.5rem 1.2rem;
+  margin: 0;
+}
+.side-info-accordion .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  color: #4f4f4f;
+}
+
+.side-info-accordion .accordion-button::after {
+  position: absolute;
+  left: 5%;
+  top: 14px;
+}
+.side-info-accordion .accordion-button:active,
+.side-info-accordion .accordion-button:hover,
+.side-info-accordion .accordion-button:focus {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.side-info-accordion .accordion-button {
+  background-color: transparent !important;
+  padding-left: 3rem;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+.side-info-accordion .accordion-body {
+  padding-left: 3rem;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+  font-size: 14px;
+}
+
+.accordion {
+  padding-top: 1.5rem;
+  background-color: #fff;
+}
+
+.info-links a {
+  color: #2166a5;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+h2.accordion-header button {
+  font-size: 14px;
+  font-family: "Popins", sans-serif;
+  font-weight: 500;
+}

@@ -1,0 +1,165 @@
+.header {
+  background: linear-gradient(90deg, #2166a5 -18.4%, #0f2b59 100%);
+  padding: 0.4rem 1.5rem;
+}
+
+.header .nav-item > a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-item.show > a {
+  font-weight: 600;
+  color: #fff !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-nav {
+  margin-right: auto;
+}
+
+.nav-user .dropdown button::after,
+.main-nav .dropdown a::after {
+  content: none;
+}
+
+#settings-quick svg {
+  width: auto;
+  height: 25px;
+  position: relative;
+  z-index: 1;
+}
+#settings-quick:focus,
+#settings-quick:active,
+#profile-quick:focus,
+#profile-quick:active {
+  outline: none;
+  box-shadow: none;
+}
+
+#settings-quick[aria-expanded="true"]::after,
+#profile-quick[aria-expanded="true"]::after {
+  content: "";
+  background-color: #1777f3;
+  width: 100%;
+  height: 101px;
+  position: absolute;
+  top: -100%;
+  left: -4px;
+  z-index: 0;
+}
+#profile-quick[aria-expanded="true"]::after {
+  height: 132px;
+}
+
+.profil-access > span::after,
+.profil-access > .dropdown::after {
+  z-index: -1;
+}
+
+#settings-quick ~ .dropdown-menu.show a,
+#profile-quick ~ .dropdown-menu.show a {
+  max-width: 300px;
+  min-width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0.7rem;
+  border-bottom: 1px solid #dfdfdf;
+  font-family: "Poppins", sans-serif;
+}
+#settings-quick ~ .dropdown-menu.show a,
+#profile-quick ~ .dropdown-menu.show a {
+  color: #202020;
+  font-family: "Poppins", sans-serif;
+}
+
+#settings-quick ~ .dropdown-menu.show a:hover,
+#profile-quick ~ .dropdown-menu.show a:hover {
+  background: #2166a5;
+  color: #fff;
+}
+#settings-quick ~ .dropdown-menu.show a:hover svg path,
+#profile-quick ~ .dropdown-menu.show a:hover svg path {
+  stroke: #fff;
+}
+
+.main-nav .dropdown > a::after {
+  content: url("./images/down.svg");
+  border: none;
+  position: absolute;
+  top: 8.5px;
+  bottom: 0;
+  right: -2px;
+  height: 8px;
+  width: 8px;
+}
+
+.main-nav .nav-item {
+  margin: 0 0.8rem;
+}
+
+.main-nav .dropdown .dropdown-menu[data-bs-popper] {
+  top: 64px;
+  border-radius: 0;
+  left: 7px;
+}
+.nav-user .dropdown .dropdown-menu[data-bs-popper] {
+  top: 62px;
+  border-radius: 0;
+  right: 0%;
+  left: unset;
+  padding: 0;
+}
+.profil-access .dropdown .dropdown-menu[data-bs-popper] {
+  top: 72px;
+  border-radius: 0;
+  right: -51.1%;
+  left: unset;
+}
+.main-nav .nav-item.show::after {
+  content: "";
+  width: 100%;
+  height: 7px;
+  background-color: #e9cb3c;
+  position: absolute;
+  top: 150%;
+  left: 7.4px;
+}
+
+.profil-access .dropdown > button > span {
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", sans-serif;
+  margin-right: 0.3rem;
+  font-weight: 400;
+}
+
+.profil-access > .dropdown button img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+#profile-quick div svg {
+  width: 15px;
+  height: 15px;
+}
+
+#profile-quick > span,
+#profile-quick > div {
+  position: relative;
+  z-index: 1;
+}
+
+#profile-quick ~ .dropdown-menu.show img {
+  width: auto;
+  border-radius: 30px;
+}
+#profile-quick ~ .dropdown-menu.show a:nth-child(1) span {
+  color: #2166a5;
+}
+#profile-quick ~ .dropdown-menu.show a:nth-child(1):hover span {
+  color: #fff;
+}
