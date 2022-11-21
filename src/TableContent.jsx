@@ -19,7 +19,7 @@ const tableData1 = [
   {
     id: 1,
     name: "Asset Management",
-    expand: false,
+    expand: true,
     items: [
       {
         id: "checkBox_1",
@@ -169,7 +169,7 @@ function TableContent() {
             <Tab.Content>
               <Tab.Pane eventKey="first" className="view-table">
                 <Tabs
-                  defaultActiveKey="profile"
+                  defaultActiveKey="MainView"
                   id="uncontrolled-tab-example"
                   className="mb-2 "
                 >

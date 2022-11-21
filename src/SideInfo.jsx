@@ -6,7 +6,7 @@ function SideInfo({ name }) {
   return (
     <div className="side-info-accordion">
       <h2>Welcome back {name} </h2>
-      <Accordion defaultActiveKey="0" alwaysOpen className="rounded-0">
+      <Accordion defaultActiveKey={["0"]} alwaysOpen className="rounded-0">
         <Accordion.Item eventKey="0" className="border-0">
           <Accordion.Header>Here is you main teaching video</Accordion.Header>
           <Accordion.Body>
